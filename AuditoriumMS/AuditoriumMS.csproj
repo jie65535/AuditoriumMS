@@ -1,0 +1,229 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{131A3E33-BCF0-4E9C-BF60-5F97DDB4FA75}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>AuditoriumMS</RootNamespace>
+    <AssemblyName>AuditoriumMS</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Access.cs" />
+    <Compile Include="FormMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMain.Designer.cs">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormManageSystem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormManageSystem.Designer.cs">
+      <DependentUpon>FormManageSystem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormAdminLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormAdminLogin.Designer.cs">
+      <DependentUpon>FormAdminLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormVerify.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormVerify.Designer.cs">
+      <DependentUpon>FormVerify.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserControls\UCBooking.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UCBooking.Designer.cs">
+      <DependentUpon>UCBooking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UCModifyPassword.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UCModifyPassword.Designer.cs">
+      <DependentUpon>UCModifyPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UCNewAuditorium.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UCNewAuditorium.Designer.cs">
+      <DependentUpon>UCNewAuditorium.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UCReservationInfoSelect.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UCReservationInfoSelect.Designer.cs">
+      <DependentUpon>UCReservationInfoSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UCSeatMap.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UCSeatMap.Designer.cs">
+      <DependentUpon>UCSeatMap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UCShowChart.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UCShowChart.Designer.cs">
+      <DependentUpon>UCShowChart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UCSummaryReport.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UCSummaryReport.Designer.cs">
+      <DependentUpon>UCSummaryReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UCTicketCountSelect.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UCTicketCountSelect.Designer.cs">
+      <DependentUpon>UCTicketCountSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UCTicketCountStatistics.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UCTicketCountStatistics.Designer.cs">
+      <DependentUpon>UCTicketCountStatistics.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UCTicketSelect.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UCTicketSelect.Designer.cs">
+      <DependentUpon>UCTicketSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UCTicketStatistics.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UCTicketStatistics.Designer.cs">
+      <DependentUpon>UCTicketStatistics.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="FormMain.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormManageSystem.resx">
+      <DependentUpon>FormManageSystem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormAdminLogin.resx">
+      <DependentUpon>FormAdminLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormVerify.resx">
+      <DependentUpon>FormVerify.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="UserControls\UCBooking.resx">
+      <DependentUpon>UCBooking.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UCModifyPassword.resx">
+      <DependentUpon>UCModifyPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UCNewAuditorium.resx">
+      <DependentUpon>UCNewAuditorium.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UCReservationInfoSelect.resx">
+      <DependentUpon>UCReservationInfoSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UCSeatMap.resx">
+      <DependentUpon>UCSeatMap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UCShowChart.resx">
+      <DependentUpon>UCShowChart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UCSummaryReport.resx">
+      <DependentUpon>UCSummaryReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UCTicketCountSelect.resx">
+      <DependentUpon>UCTicketCountSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UCTicketCountStatistics.resx">
+      <DependentUpon>UCTicketCountStatistics.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UCTicketSelect.resx">
+      <DependentUpon>UCTicketSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UCTicketStatistics.resx">
+      <DependentUpon>UCTicketStatistics.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DbTicketing.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
