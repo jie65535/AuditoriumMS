@@ -1,2 +1,29 @@
 # AuditoriumMS
-ç¤¼å ‚ç¥¨åŠ¡ç®¡ç†ç³»ç»Ÿ ä½¿ç”¨C# WinFormç¼–å†™ ä½¿ç”¨MS Accessä½œä¸ºæ•°æ®åº“
+ÀñÌÃÆ±Îñ¹ÜÀíÏµÍ³ 
+
+Ê¹ÓÃC# WinForm±àĞ´
+
+Ê¹ÓÃMS Access×÷ÎªÊı¾İ¿â
+
+
+> Èç¹ûÔÚÔËĞĞÊ±±¨´í£º**Î´ÔÚ±¾µØ¼ÆËã»úÉÏ×¢²áMicrosoft.ACE.OLEDB.12.0**
+> ![](Doc/images/error1.png) 
+>
+> ¿ÉÄÜÊÇÒòÎªÃ»ÓĞ°²×°Êı¾İ·ÃÎÊ×é¼ş£¬ĞèÒª°²×°ÏàÓ¦°æ±¾µÄÊı¾İ·ÃÎÊ×é¼ş
+> 
+> ÇëÔÚÕâÀïÏÂÔØ[Microsoft 2007 Office System Çı¶¯³ÌĞò](http://download.microsoft.com/download/7/0/3/703ffbcb-dc0c-4e19-b0da-1463960fdcdb/AccessDatabaseEngine.exe)
+
+ÒÔÏÂÊÇ³ÌĞòÔËĞĞĞ§¹ûÍ¼
+
+![](Doc/images/0.¶©Æ±.png)
+![](Doc/images/1.ĞÂ½¨Æ±ÎñĞÅÏ¢.png)
+![](Doc/images/2.Æ±ÎñĞÅÏ¢²éÑ¯.png)
+![](Doc/images/3.Æ±ÎñÊıÁ¿ĞÅÏ¢.png)
+![](Doc/images/4.Ô¤¶©ĞÅÏ¢²éÑ¯.png)
+![](Doc/images/5.Æ±ÎñĞÅÏ¢Í³¼Æ.png)
+![](Doc/images/6.1Ô¤¶©ÊıÁ¿ĞÅÏ¢Í³¼Æ-Ô¤¶©ĞÅÏ¢Í³¼Æ.png)
+![](Doc/images/6.2Ô¤¶©ÊıÁ¿ĞÅÏ¢Í³¼Æ-Ñ§ÉúÔ¤¶©ĞÅÏ¢Í³¼Æ.png)
+![](Doc/images/6.3Ô¤¶©ÊıÁ¿ĞÅÏ¢Í³¼Æ-°à¼¶Ô¤¶©ĞÅÏ¢Í³¼Æ.png)
+![](Doc/images/7.Ô¤¶©ÊıÁ¿ĞÅÏ¢Í³¼Æ-Í¼ĞÎÕ¹Ê¾.png)
+![](Doc/images/8.°à¼¶»ã×Ü±¨±í.png)
+![](Doc/images/9.ĞŞ¸Ä¹ÜÀíÔ±ÃÜÂë.png)

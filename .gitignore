@@ -3,3 +3,6 @@
 ################################################################################
 
 /.vs
+/AuditoriumMS/.vs/AuditoriumMS/v16
+/AuditoriumMS/bin/Debug
+/AuditoriumMS/obj

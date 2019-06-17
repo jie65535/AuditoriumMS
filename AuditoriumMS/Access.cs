@@ -1,9 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Data;
 using System.Data.OleDb;
+using System.IO;
 
 namespace AuditoriumMS
 {
@@ -13,7 +11,7 @@ namespace AuditoriumMS
     public class Access
     {
         // 这里改成解决方案目录下那个accdb文件  ↓
-        static string DbPath = @"F:\C#\培优礼堂票务管理系统\AuditoriumMS" + @"\DbTicketing.accdb";
+        static string DbPath = Path.Combine(Environment.CurrentDirectory, "DbTicketing.accdb");
         OleDbConnection oleDb = new OleDbConnection(string.Format(@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source={0}", DbPath));
         // 私有构造函数，单例实现
         private Access()
